@@ -1,15 +1,15 @@
-# animotion
+# @rbxts/motion
 
 ## Introduction
 
-Simply animate UI from point A to B with animotion, a simple yet powerful animation library for Roblox-TS & Roact, inspired by the popular framer-motion library for React.
+Simply animate UI from point A to B with motion, a simple yet powerful animation library for Roblox-TS & Roact, inspired by the popular framer-motion library for React.
 
 ## The motion component
 
-The core of animotion is the motion object. Think of it as a plain Roblox GUI element, supercharged with animation capabilities.
+The core of motion is the motion object. Think of it as a plain Roblox GUI element, supercharged with animation capabilities.
 
 ```ts
-import { motion } from "@rbxts/animotion";
+import { motion } from "@rbxts/motion";
 ```
 
 Animating a motion component is as straightforward as setting values on the animate prop.
@@ -18,7 +18,7 @@ Animating a motion component is as straightforward as setting values on the anim
 <motion.textbutton animate={{ Position: new UDim2(0.5, 100, 0.5, 0) }} />
 ```
 
-When these values change, animotion will automatically generate an animation to the latest values. This animation will feel great by default, but it can be configured with the flexible transition prop.
+When these values change, motion will automatically generate an animation to the latest values. This animation will feel great by default, but it can be configured with the flexible transition prop.
 
 ## Variants
 
@@ -124,7 +124,7 @@ return (
 ```tsx
 import Roact from '@rbxts/roact'
 import { useState, withHooks } from '@rbxts/roact-hooked'
-import { motion } from '@rbxts/animotion'
+import { motion } from '@rbxts/motion'
 
 const variants = {
     off: {
