@@ -2,22 +2,8 @@ import Object from '@rbxts/object-utils'
 import Roact from '@rbxts/roact'
 import { useEffect, useState } from '@rbxts/roact-hooked'
 import { TweenService } from '@rbxts/services'
+import { AnimationTransition, AnimationVariants } from '.'
 
-export interface AnimationTransition {
-    duration: number
-    easingStyle: Enum.EasingStyle
-    easingDirection: Enum.EasingDirection
-    reverses: boolean
-    repeatCount: number
-    delay: number
-}
-
-export type AnimationVariants<T> = Record<
-    string,
-    Partial<T> & {
-        transition?: Partial<AnimationTransition>
-    }
->
 
 export default function useAnimation<T extends Instance>(
     variants: AnimationVariants<T>,

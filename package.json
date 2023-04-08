@@ -1,10 +1,9 @@
 {
   "name": "@rbxts/motion",
-  "version": "0.0.1c",
+  "version": "0.0.1d",
   "author": "yayashn",
   "description": "",
   "main": "out/init.lua",
-  "typings": "out/index.d.ts",
   "repository": "https://github.com/yayashn/motion",
   "scripts": {
     "build": "rbxtsc",

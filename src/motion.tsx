@@ -1,15 +1,8 @@
 import Object from "@rbxts/object-utils";
 import Roact from "@rbxts/roact";
-import useAnimation, { AnimationTransition, AnimationVariants } from "./useAnimation";
+import useAnimation from "./useAnimation";
 import { withHooks } from "@rbxts/roact-hooked";
-
-interface WithAnimationProps<T extends GuiObject & Record<string, unknown>> {
-  variants?: AnimationVariants<T>;
-  initial?: keyof AnimationVariants<T> | (Partial<T> & { transition?: Partial<AnimationTransition> });
-  animate?: keyof AnimationVariants<T> | (Partial<T> & { transition?: Partial<AnimationTransition> });
-  transition?: Partial<AnimationTransition>;
-  ref?: Roact.Ref<T>;
-}
+import { WithAnimationProps } from ".";
 
 function withAnimation<T extends keyof JSX.IntrinsicElements>(
   elementType: T
