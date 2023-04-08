@@ -1,8 +1,10 @@
 {
   "name": "@rbxts/motion",
-  "version": "0.0.1b",
+  "version": "0.0.1c",
+  "author": "yayashn",
   "description": "",
   "main": "out/init.lua",
+  "typings": "out/index.d.ts",
   "repository": "https://github.com/yayashn/motion",
   "scripts": {
     "build": "rbxtsc",
@@ -10,7 +12,6 @@
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "types": "out/index.d.ts",
   "files": [
